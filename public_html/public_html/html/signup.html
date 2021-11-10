@@ -1,0 +1,86 @@
+<br>
+<br>
+    <div class="cont">        
+        <div class="form sign-in">
+            <h2>Welcome to ETL</h2>
+             <center>"Gym from Home"</center>
+            <label>
+                <span>Email</span>
+                <input type="email" />
+            </label>
+            <label>
+                <span>Password</span>
+                <input type="password" />
+            </label>
+            <p class="forgot-pass">Trouble in login?</p>
+            <button type="button" class="submit">Login</button>
+        <link href="../css/signup_style.css.css" rel="stylesheet" />
+         
+        </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img__text m--up">
+                 
+                    <h3>Don't have an account? Please Register!<h3>
+                </div>
+                <div class="img__text m--in">
+                
+                    <h3>If you already has an account, just login.<h3>
+                </div>
+                <div class="img__btn">
+                    <span class="m--up">Register</span>
+                    <span class="m--in">Login</span>
+                </div>
+            </div>
+            <form action="../php/connect.php" method="post">
+                <div class="form sign-up">
+                    <h2>Register with your Info</h2>
+                    <label for="firstName">
+                        <span>First Name</span>
+                        <input 
+                            type="text"
+                            class="form-control"
+                            id="firstName"
+                            name="firstName"
+                        />
+                    </label>
+                    <label for="lastName">
+                        <span>Last Name</span>
+                        <input 
+                            type="text"
+                            class="form-control"
+                            id="lastName"
+                            name="lastName"
+                        />
+                    </label>
+                    <label for="email">
+                        <span>Email</span>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="email"
+                            name="email"
+                        />
+                    </label>
+                    <label for="password">
+                        <span>Password</span>
+                        <input 
+                            type="password" 
+                            class="form-control"
+                            id="password"
+                            name="password"
+                        />
+                    </label>
+                    <button type="submit" class="submit">Register</button>
+                    
+                </div>
+            </form>
+            
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.img__btn').addEventListener('click', function() {
+            document.querySelector('.cont').classList.toggle('s--signup');
+        });
+    </script>
